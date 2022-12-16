@@ -28,6 +28,7 @@ function TheCalendar({
         events={store}
         startAccessor="start"
         endAccessor="end"
+        messages={messages}
         // step={30}
         // timeslots={2}
         defaultDate={moment().toDate()}
