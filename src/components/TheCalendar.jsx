@@ -17,6 +17,11 @@ function TheCalendar({
     setEventDetails(event);
   };
 
+  const messages = {
+    agenda: "List",
+    noEventsInRange: `There is no room booking during this period.`,
+  };
+
   return (
     <div style={{ height: "100vh", width: "100vw" }}>
       <Calendar
