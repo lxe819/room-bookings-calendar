@@ -151,7 +151,6 @@ function App() {
     }
     setStore(toBeDisplayed);
   }, [filtersSelected]);
-  // console.log("store:", store);
 
   /* -------------------------------------------------------------------------
   SELECTION of individual event 

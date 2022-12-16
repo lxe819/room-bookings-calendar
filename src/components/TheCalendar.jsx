@@ -23,16 +23,12 @@ function TheCalendar({
         events={store}
         startAccessor="start"
         endAccessor="end"
-        // style={{ height: "100vh", width: "100vw" }}
-        // views={allViews}
         // step={30}
         // timeslots={2}
-        // defaultView="week"
         defaultDate={moment().toDate()}
         localizer={localizer}
         onSelectEvent={(event) => handleSelectedEvent(event)}
         eventPropGetter={(event) => {
-          //* If want to differentiate for room STATUS, use this code
           return event.status === "CANCELLED"
             ? {
                 style: {

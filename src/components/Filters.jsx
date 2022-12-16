@@ -27,7 +27,6 @@ function Filters({ roomStatus, roomTypes, roomNames, filtersSelected, setFilters
   return (
     <div
       className="filter"
-      // style={{ width: "20vw", padding: "1rem", fontSize: "1vmax" }}
       style={ useMediaQuery('(max-width: 900px)') ? {width: "20vw", padding: "1rem", fontSize: "1.5vmax"} : {width: "20vw", padding: "1rem", fontSize: "1vmax"}}
     >
       {/* ROOM STATUS FILTER */}
@@ -89,7 +88,6 @@ function Filters({ roomStatus, roomTypes, roomNames, filtersSelected, setFilters
                 checked={filtersSelected["roomRequirements"].includes(
                   pascalCase
                 )}
-                // checked={true}
                 onChange={(e) => handleRmRqmt(e)}
               />
               <label for={pascalCase}>
